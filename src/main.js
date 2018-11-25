@@ -15,6 +15,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueChartkick from 'vue-chartkick'
 import Chart from 'chart.js'
+import InstantSearch from 'vue-instantsearch'
+import VueTyperPlugin from 'vue-typer'
+
+Vue.use(VueTyperPlugin)
+
+Vue.use(InstantSearch);
 
 Vue.use(VueChartkick, {adapter: Chart})
 

@@ -7,6 +7,12 @@
 </b-jumbotron>
 <center><el-card class="box-card" style="width: 700px">
   <div>
+      <v-avatar
+            :tile="tile"
+            :size="300"
+            color="grey lighten-4">
+            <img src="@/assets/disk.jpg">
+          </v-avatar>
     <h3><b>Name:</b></h3>
     <el-input type="text" v-model="Name" :disabled="!isEditing"
            :class="{view: !isEditing}"

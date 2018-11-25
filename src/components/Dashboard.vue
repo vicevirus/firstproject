@@ -24,6 +24,8 @@
       </b-form-input>
       </el-card></center>
       
+
+      
       <el-button @click="open();AddAttendance();"><b>Submit</b></el-button>
       <h1>Yang telah checkin</h1>
       <div align="center">

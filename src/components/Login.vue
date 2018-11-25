@@ -15,12 +15,14 @@
       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
     </form>
-      </el-card></center>
+
+    </el-card></center>
   </div>
 </template>
 
 <script>
   import auth from '../auth'
+
   export default {
     data () {
       return {
@@ -42,8 +44,7 @@
   }
 </script>
 
-<style>
- <style lang="css">
+<style-scoped>
 body {
   background: #605B56;
 }
@@ -87,4 +88,4 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-</style>
+</style-scoped>
