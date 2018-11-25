@@ -13,21 +13,12 @@ import Vuetify from 'vuetify'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueChartkick from 'vue-chartkick'
+import Chart from 'chart.js'
 
-Vue.component('editable', {
-  template: `<div contenteditable="true" @input="$emit('update:content', $event.target.innerText)"></div>`,
-  props: ['content'],
-  mounted: function () {
-      this.$el.innerText = this.content;
-  },
-  watch: {
-      content: function () {
-          this.$el.innerText = this.content;
-      }
-  }
-});
+Vue.use(VueChartkick, {adapter: Chart})
 
-Vue.use(BootstrapVue);
+Vue.use(BootstrapVue)
 
 Vue.use(Vuetify)
 

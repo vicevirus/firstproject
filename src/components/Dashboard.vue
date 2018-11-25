@@ -5,7 +5,7 @@
     Sudahkah anda menanda kedatangan anda?
   </template>
 </b-jumbotron>
-      <el-card class="box-card"><p><b>Nama pekerja</b></p>
+      <center><el-card class="box-card" style="width: 700px"><p><b>Nama pekerja</b></p>
       <b-form-input v-model="name"
                   type="text"
                   placeholder="Nama disini">
@@ -22,7 +22,7 @@
                   type="text"
                   placeholder="Sektor disini">
       </b-form-input>
-      </el-card>
+      </el-card></center>
       
       <el-button @click="open();AddAttendance();"><b>Submit</b></el-button>
       <h1>Yang telah checkin</h1>

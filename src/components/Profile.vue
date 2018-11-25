@@ -5,32 +5,36 @@
     Profile page
   </template>
 </b-jumbotron>
-<el-card class="box-card">
+<center><el-card class="box-card" style="width: 700px">
   <div>
     <h3><b>Name:</b></h3>
     <el-input type="text" v-model="Name" :disabled="!isEditing"
-           :class="{view: !isEditing}"></el-input>
+           :class="{view: !isEditing}"
+           style="width: 400px"></el-input>
   </div>
   <div>
   <h3><b>Sector:</b></h3>
     <el-input type="text" v-model="Sector" :disabled="!isEditing"
-           :class="{view: !isEditing}"></el-input>
+           :class="{view: !isEditing}"
+           style="width: 400px"></el-input>
   </div>
   <div>
   <h3><b>No tel:</b></h3>
     <el-input type="text" v-model="Telefon" :disabled="!isEditing"
-           :class="{view: !isEditing}"></el-input>
+           :class="{view: !isEditing}"
+           style="width: 400px"></el-input>
   </div>
   <div>
   <h3><b>Address:</b></h3>
     <el-input type="text" v-model="Address" :disabled="!isEditing"
-           :class="{view: !isEditing}"></el-input>
+           :class="{view: !isEditing}"
+           style="width: 400px"></el-input>
   </div>
    <el-button type="primary" plain @click="isEditing = !isEditing">
     {{ isEditing ? 'Save' : 'Edit' }}
   </el-button>
   <el-button type="primary" plain v-if="isEditing" @click="isEditing = false">Cancel</el-button>
-  </el-card>
+  </el-card></center>
 </div>
 
 

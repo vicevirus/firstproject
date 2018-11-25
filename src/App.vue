@@ -13,9 +13,16 @@
       <b-nav-item href="#/Contacts"><b>Contacts</b></b-nav-item>
       <b-nav-item href="#/Dashboard"><b>Attendance Check</b></b-nav-item>
       <b-nav-item href="#/Profile"><b>Profile</b></b-nav-item>
+      <b-nav-item href="#/Charts"><b>Charts</b></b-nav-item>
+
+      <div class="right">
+  <b-nav-item href="#/Login"><b>Login</b></b-nav-item>
+</div>
     </b-navbar-nav>
 
 </b-navbar>
+
+
 <router-view></router-view>
   </div>
 </template>
@@ -37,6 +44,13 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    padding: 1px;
 }
 </style>
 
