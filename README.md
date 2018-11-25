@@ -1,6 +1,6 @@
-# julos
+# Firstproject
 
-> A Vue.js project
+> Simple web with attendance check and login
 
 ## Build Setup
 
